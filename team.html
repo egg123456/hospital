@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>team</title>
+    <link rel="shortcut icon" href="logo.ico" />
+    <link rel="stylesheet" href="css/cssreset-min.css">
+    <link rel="stylesheet" href="css/team.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div class="headDiv bx bm ff">
+        <div class="wal">
+            <a><img src="imgs/logo.png" alt=""></a>
+            <ul class="of">
+                <li class="fl p">大众版</li>
+                <li class="fl">专业版</li>
+                <li class="fl">ENGLISH</li>
+                <li class="fl">OA登录</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wal-nav bx bm ff">
+        <ul class="of aaa">
+            <li class="fl ta"><a href="index.html">网站首页</a></li>
+            <li class="fl ta"><a href="hospital-introduction.html">医院概况</a></li>
+            <li class="fl ta"><a href="news.html">新闻中心</a></li>
+            <li class="fl ta current"><a href="team.html">医护团队</a></li>
+            <li class="fl ta"><a href="ill.html">患者服务</a></li>
+            <li class="fl ta"><a>健康知识</a></li>
+            <li class="fl ta"><a>教学科研</a></li>
+        </ul>
+        <script>
+            $(function() {
+                $('.aaa li').hover(function() {
+                    $(this).addClass('hover')
+                }, function() {
+                    $(this).removeClass('hover');
+                })
+            })
+        </script>
+        <form action="#" class="fr">
+            <div class="topSearch">
+                <input type="text" class="inp1">
+                <input type="button" class="btn1">
+            </div>
+        </form>
+    </div>
+    <div class="banner bx bm">
+        <a><img src="imgs/teamp1.jpg" alt=""></a>
+    </div>
+    <div class="main bx bm ff">
+        <a>主页</a>-＞
+        <a>医护团队</a>-＞
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.main a,.right .content dd a').hover(function() {
+                $(this).css('color', '#5E9FDF');
+            }, function() {
+                $(this).css('color', '#666');
+            })
+        })
+    </script>
+    <div class="contain">
+        <div class="left fl">
+            <dl>
+                <dt>医护团队</dt>
+                <dd>
+                    <a href="">
+                        <div class="icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>&nbsp;寻找科室</a>
+                </dd>
+                <dd>
+                    <a href="">
+                        <div class="icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>&nbsp;寻找医生</a>
+                </dd>
+                <dd>
+                    <a href="">
+                        <div class="icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>&nbsp;特色医疗</a>
+                </dd>
+                <dd>
+                    <a href="">
+                        <div class="icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>&nbsp;护理团队</a>
+                </dd>
+                <dd>
+                    <a href="">
+                        <div class="icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>&nbsp;技术设备</a>
+                </dd>
+                <dd>
+                    <a href="">
+                        <div class="icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>&nbsp;专家在职</a>
+                </dd>
+            </dl>
+            <script>
+                $('.left dl dd a').hover(function() {
+                    $(this).css({
+                        'background': '#12579F',
+                        color: 'white'
+                    });
+                    $(this).children('.icon').children('div').css('background', 'white');
+                }, function() {
+                    $(this).css({
+                        'background': '#f0f0f0',
+                        color: '#666'
+                    });
+                    $(this).children('.icon').children('div').css('background', '#aaa');
+                })
+            </script>
+        </div>
+        <div class="right fr">
+            <div class="sys">
+                <div class="title">
+                    <a>内科系统<a>
+                </div>
+                <div class="content ff">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dd><a>＞ 北京大学肝病研究所</a></dd>
+                    <dd><a>＞ 神经内科</a></dd>
+                    <dd><a>＞ 肾内科</a></dd>
+                    </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                            <dd><a>＞ 神经内科</a></dd>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                            <dd><a>＞ 神经内科</a></dd>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                            <dd><a>＞ 神经内科</a></dd>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="sys">
+                <div class="title">
+                    <a>外科系统<a>
+                </div>
+                    <div class="content ff">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dd><a>＞ 北京大学肝病研究所</a></dd>
+                    <dd><a>＞ 神经内科</a></dd>
+                    <dd><a>＞ 肾内科</a></dd>
+                    <dd><a>＞ 肾内科</a></dd>
+                    </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                            <dd><a>＞ 神经内科</a></dd>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                            <dd><a>＞ 神经内科</a></dd>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                            <dd><a>＞ 神经内科</a></dd>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="sys">
+                <div class="title">
+                    <a>妇产科儿科<a>
+                </div>
+                    <div class="content ff">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                    </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+                        </dl>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="sys">
+                <div class="title">
+                    <a>五官科<a>
+                </div>
+                    <div class="content ff">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                    </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                        </dl>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="sys">
+                <div class="title">
+                    <a>其他科室<a>
+                </div>
+                    <div class="content ff">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                    </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                        </dl>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="sys">
+                <div class="title">
+                    <a>诊断相关科室<a>
+                </div>
+                    <div class="content ff">
+                        <ol>
+                            <li>
+                                <dl>
+                                    <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                    </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 肾内科</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dd><a>＞ 北京大学肝病研究所</a></dd>
+
+                        </dl>
+                    </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cb"></div>
+    <div class="footDiv">
+        <div class="content bx bm">
+            <ul>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd>出诊信息查询</dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">院长信箱</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">隐私安全</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">版权声明</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd></dd>
+                        <dt class="last">帮助信息</dt>
+                    </dl>
+                </li>
+            </ul>
+            <script>
+                $(function() {
+                    $('.footDiv .content ul li dl *').hover(function() {
+                        $(this).css('text-decoration', 'underline')
+                    }, function() {
+                        $(this).css('text-decoration', 'none')
+                    })
+                })
+            </script>
+            <div class="copyright fr">
+                <p>ICP备案信息：京ICP备10005257 <br> 京ICP备05082109 <br> 医院地址（西直门院区）：北京市西直门南大街11号<br> 邮编：100044 <br> 医院总机：8832666 <br> <br> COPYRIGHT © 2004-2010　网站建设：北京分形科技
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fix pf">
+        <ul>
+            <li>
+                <a href=""><img src="imgs/icon1.png" alt=""><br>官方微博</banner>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon2.png" alt=""><br>官方微信</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon3.png" alt=""><br>请提意见</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon4.png" alt=""><br>人才招聘</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon5.png" alt=""><br>我要进修</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

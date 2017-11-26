@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+.bm {
+  margin: 0 auto;
+}
+.ta {
+  text-align: center;
+}
+.of {
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cb {
+  clear: both;
+}
+.btm {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dn {
+  display: none;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.ff {
+  font-family: "微软雅黑";
+  color: #707070;
+}
+.bx {
+  width: 1000px;
+}
+.title {
+  width: 300px;
+}
+.title a {
+  float: left;
+  height: 40px;
+  color: #707070;
+  font-size: 20px;
+  border-bottom: 3px solid #5E95B5;
+  margin-right: 20px;
+}
+.title a span {
+  font-size: 14px;
+}
+.title a.last {
+  float: right;
+  margin-right: 0;
+  border: none;
+}
+.headDiv .wal {
+  padding: 30px 0 30px;
+  position: relative;
+  font-size: 14px;
+}
+.headDiv .wal ul {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.headDiv .wal ul li {
+  padding: 0 6px;
+}
+.wal-nav {
+  position: relative;
+  height: 50px;
+  background-color: #F0F0F0;
+}
+.wal-nav ul li {
+  height: 50px;
+  padding: 15px 0;
+  width: 106px;
+  font-size: 14px;
+}
+.wal-nav ul li a {
+  text-decoration: none;
+  color: #666;
+}
+.wal-nav form {
+  position: absolute;
+  right: 220px;
+  top: 15px;
+}
+.wal-nav form .topSearch {
+  border: 1px solid #707070;
+  background-color: #fff;
+  width: 197px;
+  height: 23px;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 2;
+}
+.wal-nav form .topSearch .inp1 {
+  position: absolute;
+  left: 15px;
+  width: 150px;
+  height: 23px;
+  border: none;
+  z-index: 1;
+}
+.wal-nav form .topSearch .btn1 {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  right: 2px;
+  background: #fff url(../imgs/search.jpg) no-repeat 6px 0;
+  background-size: 20px;
+  border: none;
+  z-index: 1;
+}
+.banner {
+  height: 232px;
+}
+.main {
+  line-height: 60px;
+}
+.content .content1 {
+  width: 240px;
+  margin-right: 13px;
+}
+.content .content1 ul {
+  line-height: 60px;
+  background-color: #F4F4F4;
+}
+.content .content1 ul h2 {
+  margin: 0 auto;
+  width: 222px;
+  height: 40px;
+  background-color: #5088B7;
+  text-align: center;
+  color: white;
+}
+.content .content1 ul li {
+  width: 240px;
+  height: 40px;
+  padding: 0 0 0 20px;
+}
+.content .content1 ul li.first {
+  background-color: #6AA2D1;
+  color: white;
+}
+.content .content1 ul li:before {
+  content: url(../imgs/li.png);
+}
+.content .content1 ul li.hover {
+  background-color: #12579F;
+  color: white;
+}
+.content .content2 {
+  height: 900px;
+  top: 0px;
+  right: 0px;
+}
+.content .content2 .content21 {
+  top: 0px;
+  right: 0px;
+}
+.content .content2 .content21 .intr {
+  top: 0px;
+  right: 0px;
+  padding: 30px;
+  width: 250px;
+  height: 347px;
+  color: white;
+  background-color: #2B455B;
+}
+.content .content2 .content21 .intr h1 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 50px;
+}
+.content .content2 .content21 .intr p {
+  font-size: 12px;
+}
+.work-img .content {
+  float: right;
+  width: 750px;
+}
+.work-img .content .img1 {
+  width: 360px;
+  height: 350px;
+  margin: 0 30px 30px 0;
+  background-color: #f0f0f0;
+}
+.work-img .content .img1 h2 {
+  line-height: 50px;
+}
+.work-img .content .img1 h2 img {
+  position: relative;
+  top: 5px;
+  left: -8px;
+}
+.work-img .content .img1 p {
+  width: 310px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.work-img .content .last {
+  margin-right: 0px;
+}
+.work-img .content .img2 {
+  margin: 0 30px 70px 0;
+}
+.footDiv {
+  height: 260px;
+  color: white;
+  font-size: 12px;
+  background-color: #286496;
+}
+.footDiv .content ul li {
+  width: 95px;
+  height: 260px;
+  padding: 10px 0 0 0;
+}
+.footDiv .content ul li dl {
+  height: 250px;
+  position: relative;
+}
+.footDiv .content ul li dl dt {
+  font-weight: bold;
+  line-height: 40px;
+}
+.footDiv .content ul li dl dt.last {
+  position: absolute;
+  bottom: 5px;
+}
+.footDiv .content ul li dl dd {
+  line-height: 20px;
+}
+.footDiv .content .copyright {
+  padding: 20px 0 0 0;
+}
+.footDiv .content .copyright p {
+  line-height: 25px;
+  text-align: right;
+}
+.fix {
+  bottom: 70px;
+  right: 30px;
+}
+.fix ul li {
+  width: 73px;
+  height: 73px;
+  background-color: #5292C8;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.fix ul li a {
+  color: white;
+  font-size: 13px;
+}

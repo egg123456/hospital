@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ill</title>
+    <link rel="shortcut icon" href="logo.ico" />
+    <link rel="stylesheet" href="css/cssreset-min.css">
+    <link rel="stylesheet" href="css/ill.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div class="headDiv bx bm ff">
+        <div class="wal">
+            <a><img src="imgs/logo.png" alt=""></a>
+            <ul class="of">
+                <li class="fl p">大众版</li>
+                <li class="fl">专业版</li>
+                <li class="fl">ENGLISH</li>
+                <li class="fl">OA登录</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wal-nav bx bm ff">
+        <ul class="of aaa">
+            <li class="fl ta"><a href="index.html">网站首页</a></li>
+            <li class="fl ta"><a href="hospital-introduction.html">医院概况</a></li>
+            <li class="fl ta"><a href="news.html">新闻中心</a></li>
+            <li class="fl ta"><a href="team.html">医护团队</a></li>
+            <li class="fl ta current"><a href="ill.html">患者服务</a></li>
+            <li class="fl ta"><a>健康知识</a></li>
+            <li class="fl ta"><a>教学科研</a></li>
+        </ul>
+        <script>
+            $(function() {
+                $('.aaa li').hover(function() {
+                    $(this).addClass('hover')
+                }, function() {
+                    $(this).removeClass('hover');
+                })
+            })
+        </script>
+        <form action="#" class="fr">
+            <div class="topSearch">
+                <input type="text" class="inp1">
+                <input type="button" class="btn1">
+            </div>
+        </form>
+    </div>
+    <div class="banner bx bm">
+        <a><img src="imgs/illp1.jpg" alt=""></a>
+    </div>
+    <div class="date bx bm">
+        <span>出诊信息查询：</span>
+        <input class="inp1" type="search" value="请输入科室名称">
+        <input class="inp1" type="search" value="请输入医生姓名">
+        <input type="search" value="请选择日期">
+        <input type="search" value="按时间">
+        <a class="fr"></a>
+    </div>
+    <div class="service1 bx bm ff pr">
+        <ol class="of">
+            <li class="of">
+                <div class="head btm">
+                    <img class="img1" src="imgs/illp2.png" alt="">
+                    <span>挂号</span>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $('.service1 ol>li').hover(function() {
+                            $(this).children('.head').children('img').animate({
+                                top: '-=' + 10
+                            })
+                        }, function() {
+                            $(this).children('.head').children('img').animate({
+                                top: '+=' + 10
+                            })
+                        })
+                        $('.service1 ul>li,.service2 .content1 ul li,.service2 .contain1 .title a.last').hover(function() {
+                            $(this).css('color', '#5E9FDF');
+                        }, function() {
+                            $(this).css('color', '#666');
+                        })
+                    })
+                </script>
+                <ul class="of">
+                    <li>挂号途径</li>
+                    <li>电话挂号须知</li>
+                    <li>社区挂号须知</li>
+                    <li>114挂号须知</li>
+                    <li>社区预约挂号点及…</li>
+                </ul>
+            </li>
+            <li class="of">
+                <div class="head btm">
+                    <img class="img2" src="imgs/illp3.png" alt="">
+                    <span>门诊</span>
+                </div>
+                <ul class="of">
+                    <li>挂号途径</li>
+                    <li>电话挂号须知</li>
+                    <li>社区挂号须知</li>
+                    <li>114挂号须知</li>
+                    <li>社区预约挂号点及…</li>
+                    <li>社区挂号须知</li>
+                    <li>114挂号须知</li>
+                    <li>社区预约挂号点及…</li>
+                </ul>
+            </li>
+            <li class="of">
+                <div class="head btm">
+                    <img class="img3" src="imgs/illp4.png" alt="">
+                    <span>住院</span>
+                </div>
+                <ul class="of">
+                    <li>挂号途径</li>
+                    <li>电话挂号须知</li>
+                    <li>社区挂号须知</li>
+                </ul>
+            </li>
+            <li class="of">
+                <div class="head btm">
+                    <img class="img4" src="imgs/illp5.png" alt="">
+                    <span>交通</span>
+                </div>
+                <ul class="of">
+                    <li>挂号途径</li>
+                    <li>电话挂号须知</li>
+                    <li>社区挂号须知</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="service2 bx bm">
+        <div class="contain1 fl">
+            <div class="title">
+                <a>医保知识</a>
+                <a class="last"><span>更多+</span></a>
+            </div>
+            <div class="content1 ff">
+                <ul>
+                    <li>北京市医疗保险常见问题解答-特殊病种常见问题</li>
+                    <li>北京市医疗保险常见问题解答-如何办理出、住院...</li>
+                    <li>北京市医疗保险常见问题解答-人工器官和材料费...</li>
+                    <li>北京市医疗保险常见问题解答-单病种报销政策</li>
+                    <li>北京市医疗保险常见问题解答 -北京大学人民医院...</li>
+                    <li>医疗保险常见问题解答-持卡就医</li>
+                    <li>开药量温馨提示</li>
+                    <li>工伤保险常见问题解答</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contain2 fl">
+            <ul>
+                <li>
+                    <a><img src="imgs/illp6.png" alt=""><br>自愿服务</a>
+                </li>
+                <li>
+                    <a><img src="imgs/illp7.png" alt=""><br>医联体服务</a>
+                </li>
+                <li>
+                    <a><img src="imgs/illp8.png" alt=""><br>意见反馈</a>
+                </li>
+                <li class="zzz">
+                    <a><img src="imgs/illp9.png" alt=""><br>在线调查</a>
+                    <img src="imgs/illp9.png" alt="">
+                </li>
+            </ul>
+            <script>
+                $(function() {
+                    $('.service2 .contain2 ul li').hover(function() {
+                        $(this).css('background', '#aaa');
+                    }, function() {
+                        $(this).css('background', '#65A1D4')
+                    })
+                })
+            </script>
+        </div>
+        <div class="contain3 ff fl pr">
+            <input type="text" value="药品查询"><i class="icon1"></i>
+            <input type="text" value="医疗服务价格查询"><i class="icon2"></i>
+            <input type="text" value="执业职格查询"><i class="icon3"></i>
+        </div>
+    </div>
+    <div class="cb"></div>
+    <div class="footDiv">
+        <div class="content bx bm">
+            <ul>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <script>
+                    $(function() {
+                        $('.footDiv .content ul li dl *').hover(function() {
+                            $(this).css('text-decoration', 'underline')
+                        }, function() {
+                            $(this).css('text-decoration', 'none')
+                        })
+                    })
+                </script>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd>出诊信息查询</dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">院长信箱</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">隐私安全</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">版权声明</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd></dd>
+                        <dt class="last">帮助信息</dt>
+                    </dl>
+                </li>
+            </ul>
+            <div class="copyright fr">
+                <p>ICP备案信息：京ICP备10005257 <br> 京ICP备05082109 <br> 医院地址（西直门院区）：北京市西直门南大街11号<br> 邮编：100044 <br> 医院总机：8832666 <br> <br> COPYRIGHT © 2004-2010　网站建设：北京分形科技
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fix pf">
+        <ul>
+            <li>
+                <a href=""><img src="imgs/icon1.png" alt=""><br>官方微博</banner>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon2.png" alt=""><br>官方微信</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon3.png" alt=""><br>请提意见</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon4.png" alt=""><br>人才招聘</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon5.png" alt=""><br>我要进修</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,492 @@
+* {
+  box-sizing: border-box;
+}
+.bm {
+  margin: 0 auto;
+}
+.ta {
+  text-align: center;
+}
+.of {
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cb {
+  clear: both;
+}
+.btm {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dn {
+  display: none;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.ff {
+  font-family: "微软雅黑";
+  color: #707070;
+}
+.bx {
+  width: 1000px;
+}
+.headDiv .wal {
+  padding: 30px 0 30px;
+  position: relative;
+  font-size: 14px;
+}
+.headDiv .wal ul {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.headDiv .wal ul li {
+  padding: 0 6px;
+}
+.headDiv .wal ul li:hover {
+  cursor: pointer;
+}
+.wal-nav {
+  position: relative;
+  height: 50px;
+  background-color: #F0F0F0;
+}
+.wal-nav ul li {
+  height: 50px;
+  padding: 15px 0;
+  width: 106px;
+  font-size: 14px;
+}
+.wal-nav ul li a {
+  color: #707070;
+  text-decoration: none;
+}
+.wal-nav form {
+  position: absolute;
+  right: 220px;
+  top: 15px;
+}
+.wal-nav form .topSearch {
+  border: 1px solid #707070;
+  background-color: #fff;
+  width: 197px;
+  height: 23px;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 2;
+}
+.wal-nav form .topSearch .inp1 {
+  position: absolute;
+  left: 15px;
+  width: 150px;
+  height: 23px;
+  border: none;
+  z-index: 1;
+}
+.wal-nav form .topSearch .btn1 {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  right: 2px;
+  background: #fff url(../imgs/search.jpg) no-repeat 6px 0;
+  background-size: 20px;
+  border: none;
+  z-index: 1;
+}
+.Banner {
+  overflow: hidden;
+}
+.Banner ul {
+  position: relative;
+  height: 232px;
+}
+.Banner ul li {
+  height: 232px;
+}
+.Banner ul li.Banner2 {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+.Banner .btnDiv {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 35x;
+}
+.Banner .btnDiv span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f4f4f4;
+  margin: 3px;
+}
+.Banner .formDiv {
+  top: 20px;
+  right: 0px;
+}
+.Banner .formDiv .jiantou {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: #777;
+  color: #fff;
+  padding: 0 0 0px 10px;
+  border-radius: 25px;
+  top: 70px;
+  left: -20px;
+}
+.Banner .formDiv .bg1 {
+  width: 220px;
+  height: 180px;
+  background-color: #777;
+  padding: 20px 0 10px 0;
+  color: white;
+  border-radius: 20px 0 0 20px;
+}
+.Banner .formDiv .bg1 h2 {
+  width: 220px;
+  height: 40px;
+  padding-left: 30px;
+}
+.Banner .formDiv .bg1 .inp2 {
+  float: right;
+  width: 180px;
+  height: 23px;
+  border-radius: 12px;
+  margin: 0 10px 10px 0;
+  background-color: #d0d0d0;
+  padding: 0 0 0 10px;
+  color: #fff;
+}
+.Banner .formDiv .bg1 .btn2 {
+  width: 21px;
+  height: 21px;
+  background: #ddd url(../imgs/search.jpg) no-repeat;
+  background-size: 20px;
+  border: none;
+}
+.Banner .formDiv .bg1 .btn21 {
+  position: absolute;
+  right: 15px;
+  top: 62px;
+}
+.Banner .formDiv .bg1 .btn22 {
+  position: absolute;
+  right: 15px;
+  top: 95px;
+}
+.Banner .formDiv .bg1 .btn23 {
+  position: absolute;
+  right: 15px;
+  top: 128px;
+}
+.wal-m .index-img ul li {
+  margin: 20px 12px 30px 0;
+}
+.wal-m .index-img ul li a {
+  display: inline-block;
+  width: 190px;
+  height: 105px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.wal-m .index-img ul li a.a1 {
+  background-color: #91585A;
+}
+.wal-m .index-img ul li a.a2 {
+  background-color: #5E95B5;
+}
+.wal-m .index-img ul li a.a3 {
+  background-color: #8D7153;
+}
+.wal-m .index-img ul li a.a4 {
+  background-color: #68B4B5;
+}
+.wal-m .index-img ul li a.a5 {
+  background-color: #4F5A7C;
+}
+.wal-m .index-img ul li a img {
+  margin: 10px 60px 0 65px;
+}
+.wal-m .index-img ul li.last {
+  margin-right: 0;
+}
+.wal-m .index-part2 .title {
+  width: 610px;
+}
+.wal-m .index-part2 .title a {
+  float: left;
+  height: 40px;
+  color: #707070;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.wal-m .index-part2 .title a.current {
+  border-bottom: 3px solid #5E95B5;
+}
+.wal-m .index-part2 .title a span {
+  font-size: 14px;
+}
+.wal-m .index-part2 .title a.last {
+  float: right;
+  margin-right: 0;
+  border: none;
+}
+.wal-m .index-part2 .content {
+  margin: 20px 0;
+  width: 610px;
+}
+.wal-m .index-part2 .content a {
+  width: 315px;
+  height: 215px;
+}
+.wal-m .index-part2 .content a .wenzi {
+  position: absolute;
+  width: 310px;
+  left: 0;
+  bottom: 0px;
+  color: white;
+  padding: 10px;
+}
+.wal-m .index-part2 .content a .wenzi .circle {
+  background-color: #ddd;
+}
+.wal-m .index-part2 .content a .wenzi .circle i {
+  float: right;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  margin: 0 8px 0 0;
+  position: relative;
+  top: 10px;
+  border-radius: 4px;
+}
+.wal-m .index-part2 .content .content1 {
+  width: 270px;
+  font-size: 12px;
+  margin: 0px 0 10px 20px;
+  display: inline-block;
+}
+.wal-m .index-part2 .content .content1 h2 {
+  font-size: 16px;
+  color: #000;
+  margin: 0px 0 10px 0;
+}
+.wal-m .index-part2 .content .content1 p {
+  overflow: hidden;
+}
+.wal-m .index-part2 .content .content1 p .ax {
+  float: right;
+  width: 100px;
+  height: 20px;
+  color: blue;
+}
+.wal-m .index-part2 .content .content1 .ul {
+  list-style-image: url(../imgs/li.png);
+  font-size: 13px;
+  margin-left: 20px;
+  line-height: 25px;
+}
+.wal-m .index-part2 .content .content1 .ul li {
+  padding-bottom: 5px;
+}
+.wal-m .index-part2 .l2 {
+  width: 350px;
+  margin-left: 20px;
+}
+.wal-m .index-part2 .title1 {
+  width: 350px;
+}
+.wal-m .index-part2 .title1 a {
+  float: left;
+  height: 40px;
+  color: #707070;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.wal-m .index-part2 .title1 a.current {
+  border-bottom: 3px solid #5E95B5;
+}
+.wal-m .index-part2 .title1 a span {
+  font-size: 14px;
+}
+.wal-m .index-part2 .title1 a.last {
+  float: right;
+  margin-right: 0;
+  border: none;
+}
+.wal-m .index-part2 .content2 .content21 {
+  width: 160px;
+  margin: 20px 0;
+}
+.wal-m .index-part2 .content2 .content21 span {
+  bottom: 5px;
+  left: 5px;
+  color: white;
+}
+.wal-m .index-part2 .content2 .content21 ul {
+  left: 100px;
+  bottom: 5px;
+}
+.wal-m .index-part2 .content2 .content21 ul li {
+  width: 20px;
+  height: 18px;
+  vertical-align: center;
+  line-height: 18px;
+  margin-right: 8px;
+  padding-left: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+.wal-m .index-part2 .content2 .content22 {
+  width: 170px;
+  right: 5px;
+  top: 0px;
+}
+.wal-m .index-part2 .content2 .content22 h2 {
+  margin-bottom: 20px;
+}
+.wal-m .index-part2 .content2 .content22 p {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.wal-m .index-part2 .content2 .content22 span {
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #3679BF;
+}
+.news ul {
+  overflow: hidden;
+}
+.news ul li {
+  width: 330px;
+  float: left;
+}
+.news ul li .title {
+  width: 300px;
+}
+.news ul li .title a {
+  float: left;
+  height: 40px;
+  color: #707070;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.news ul li .title a.current {
+  border-bottom: 3px solid #5E95B5;
+}
+.news ul li .title a span {
+  font-size: 14px;
+}
+.news ul li .title a.last {
+  float: right;
+  margin-right: 0;
+  border: none;
+}
+.news ul li .content ul {
+  margin: 20px 0;
+}
+.news ul li .content ul li {
+  width: 330px;
+  font-size: 12px;
+  line-height: 25px;
+}
+.footlink .content {
+  width: 1370px;
+  margin: 40px auto 0;
+  background-color: #F4F4F4;
+  height: 80px;
+  padding: 10px 0;
+}
+.footlink .content ul li {
+  float: left;
+  margin: 0 40px;
+}
+.footlink .content .r-arrow {
+  width: 25px;
+  height: 80px;
+  overflow: hidden;
+  left: 130px;
+}
+.footlink .content .r-arrow a {
+  color: rgba(0, 0, 0, 0.4);
+  top: -20px;
+  font-size: 80px;
+}
+.footlink .content .l-arrow {
+  width: 25px;
+  height: 80px;
+  overflow: hidden;
+  right: 130px;
+}
+.footlink .content .l-arrow a {
+  color: rgba(0, 0, 0, 0.4);
+  left: -25px;
+  top: -20px;
+  font-size: 80px;
+}
+.footDiv {
+  height: 260px;
+  color: white;
+  font-size: 12px;
+  background-color: #286496;
+}
+.footDiv .content ul li {
+  width: 95px;
+  height: 260px;
+  padding: 10px 0 0 0;
+}
+.footDiv .content ul li dl {
+  height: 250px;
+  position: relative;
+}
+.footDiv .content ul li dl dt {
+  font-weight: bold;
+  line-height: 40px;
+}
+.footDiv .content ul li dl dt.last {
+  position: absolute;
+  bottom: 5px;
+}
+.footDiv .content ul li dl dd {
+  line-height: 20px;
+}
+.footDiv .content .copyright {
+  padding: 20px 0 0 0;
+}
+.footDiv .content .copyright p {
+  line-height: 25px;
+  text-align: right;
+}
+.fix {
+  bottom: 70px;
+  right: 30px;
+}
+.fix ul li {
+  width: 73px;
+  height: 73px;
+  background-color: #5292C8;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.fix ul li a {
+  color: white;
+  font-size: 13px;
+}

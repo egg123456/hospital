@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+}
+.bm {
+  margin: 0 auto;
+}
+.ta {
+  text-align: center;
+}
+.of {
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cb {
+  clear: both;
+}
+.btm {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dn {
+  display: none;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.ff {
+  font-family: "微软雅黑";
+  color: #707070;
+}
+.bx {
+  width: 1000px;
+}
+.headDiv .wal {
+  padding: 30px 0 30px;
+  position: relative;
+  font-size: 14px;
+}
+.headDiv .wal ul {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.headDiv .wal ul li {
+  padding: 0 6px;
+}
+.wal-nav {
+  position: relative;
+  height: 50px;
+  background-color: #F0F0F0;
+}
+.wal-nav ul li {
+  height: 50px;
+  padding: 15px 0;
+  width: 106px;
+  font-size: 14px;
+}
+.wal-nav ul li.current {
+  background-color: #3073AB;
+}
+.wal-nav ul li.current a {
+  color: white;
+}
+.wal-nav ul li.hover {
+  background: #5E9FDF;
+}
+.wal-nav ul li.hover a {
+  color: white;
+}
+.wal-nav ul li a {
+  text-decoration: none;
+  color: #666;
+}
+.wal-nav form {
+  position: absolute;
+  right: 220px;
+  top: 15px;
+}
+.wal-nav form .topSearch {
+  border: 1px solid #707070;
+  background-color: #fff;
+  width: 197px;
+  height: 23px;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 2;
+}
+.wal-nav form .topSearch .inp1 {
+  position: absolute;
+  left: 15px;
+  width: 150px;
+  height: 23px;
+  border: none;
+  z-index: 1;
+}
+.wal-nav form .topSearch .btn1 {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  right: 2px;
+  background: #fff url(../imgs/search.jpg) no-repeat 6px 0;
+  background-size: 20px;
+  border: none;
+  z-index: 1;
+}
+.banner {
+  height: 232px;
+}
+.date {
+  height: 42px;
+  background-color: #5292C8;
+  color: white;
+  font-size: 14px;
+  line-height: 42px;
+  margin: 20px auto 30px ;
+}
+.date a {
+  margin: 20px;
+}
+.date a.last {
+  float: right;
+  position: relative;
+  bottom: 20px;
+}
+.contain .content1 {
+  width: 635px;
+  height: 215px;
+}
+.contain .content1 .img {
+  position: relative;
+}
+.contain .content1 .img a {
+  margin-right: 20px;
+}
+.contain .content1 .img span {
+  color: white;
+  width: 310px;
+  bottom: -210px;
+  padding: 0 10px;
+  left: 0px;
+}
+.contain .content1 .img span i {
+  float: right;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  margin: 0 4px;
+  border-radius: 4px;
+  position: relative;
+  top: 7px;
+}
+.contain .content1 .img span i.current {
+  background-color: #5292C8;
+}
+.contain .content1 .about {
+  font-size: 12px;
+  height: 215px;
+}
+.contain .content1 .about h2 {
+  color: black;
+  font-size: 16px;
+  line-height: 35px;
+}
+.contain .content1 .about p {
+  width: 280px;
+  height: 70px;
+  line-height: 18px;
+  margin: 0 0 5px;
+}
+.contain .content1 .about p a {
+  float: right;
+  margin-right: 40px;
+  color: blue;
+}
+.contain .content2 {
+  top: 0px;
+  right: 0px;
+  width: 330px;
+}
+.contain .content2 .title {
+  width: 100%;
+}
+.contain .content2 .title a {
+  float: left;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+  border-bottom: 3px solid #5E95B5;
+  margin-right: 20px;
+}
+.contain .content2 .title a span {
+  font-size: 14px;
+}
+.contain .content2 .title a.last {
+  font-size: 14px;
+  float: right;
+  margin-right: 0;
+  border: none;
+}
+.contain .content2 .news {
+  margin: 20px 0 0 0;
+}
+.contain .content2 .news ul li {
+  font-size: 14px;
+  line-height: 24px;
+}
+.contain2 {
+  margin: 20px auto 0;
+  padding: 20px 0 0 0 ;
+}
+.contain2 .content {
+  float: left;
+  margin: 20px 20px 0 0 ;
+  width: 315px;
+}
+.contain2 .content .title {
+  width: 100%;
+}
+.contain2 .content .title a {
+  float: left;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+  border-bottom: 3px solid #5E95B5;
+  margin-right: 20px;
+}
+.contain2 .content .title a span {
+  font-size: 14px;
+}
+.contain2 .content .title a.last {
+  font-size: 14px;
+  float: right;
+  margin: 0 0 0px;
+  border: none;
+}
+.contain2 .content .news {
+  margin: 10px 0 0 0;
+}
+.contain2 .content .news ul li a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 14px;
+  line-height: 24px;
+}
+.contain2 .content .news .images img {
+  padding-right: 10px;
+}
+.contain2 .content .news p {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.contain2 .last {
+  margin: 20px 0 0 0 ;
+}
+.contain3 {
+  margin: 20px auto;
+}
+.contain3 .title {
+  width: 1000px;
+}
+.contain3 .title a {
+  float: left;
+  height: 40px;
+  color: black;
+  font-size: 20px;
+  border-bottom: 3px solid #5E95B5;
+  margin-right: 20px;
+}
+.contain3 .title a span {
+  font-size: 14px;
+}
+.contain3 .title a.last {
+  font-size: 14px;
+  float: right;
+  margin: 15px 0 0 0;
+  border: none;
+}
+.contain3 .content ul {
+  margin: 20px;
+}
+.contain3 .content ul li {
+  margin: 15px;
+}
+.contain3 .content ul li:hover {
+  cursor: pointer;
+}
+.contain3 .content ul li span {
+  width: 155px;
+  height: 30px;
+  background-color: #999;
+  bottom: 5px;
+  left: -12px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+}
+.contain3 .content .r-shell {
+  left: 0px;
+  top: 80px;
+  width: 40px;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 0 30px 30px 0;
+}
+.contain3 .content .r-shell:hover {
+  background-color: #666;
+}
+.contain3 .content .r-shell .r-arrow {
+  width: 25px;
+  height: 80px;
+  overflow: hidden;
+}
+.contain3 .content .r-shell .r-arrow a {
+  color: rgba(255, 255, 255, 0.9);
+  top: -20px;
+  left: 4px;
+  font-size: 70px;
+}
+.contain3 .content .l-shell {
+  right: 0px;
+  top: 80px;
+  width: 40px;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 30px 0px 0 30px;
+}
+.contain3 .content .l-shell:hover {
+  background-color: #666;
+}
+.contain3 .content .l-shell .l-arrow {
+  width: 25px;
+  height: 80px;
+  overflow: hidden;
+  left: 20px;
+}
+.contain3 .content .l-shell .l-arrow a {
+  color: rgba(255, 255, 255, 0.9);
+  left: -20px;
+  top: -20px;
+  font-size: 70px;
+}
+.footDiv {
+  height: 260px;
+  color: white;
+  font-size: 12px;
+  background-color: #286496;
+}
+.footDiv .content ul li {
+  width: 95px;
+  height: 260px;
+  padding: 10px 0 0 0;
+}
+.footDiv .content ul li dl {
+  height: 250px;
+  position: relative;
+}
+.footDiv .content ul li dl dt {
+  font-weight: bold;
+  line-height: 40px;
+}
+.footDiv .content ul li dl dt.last {
+  position: absolute;
+  bottom: 5px;
+}
+.footDiv .content ul li dl dd {
+  line-height: 20px;
+}
+.footDiv .content .copyright {
+  padding: 20px 0 0 0;
+}
+.footDiv .content .copyright p {
+  line-height: 25px;
+  text-align: right;
+}
+.fix {
+  bottom: 70px;
+  right: 30px;
+}
+.fix ul li {
+  width: 73px;
+  height: 73px;
+  background-color: #5292C8;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.fix ul li:hover {
+  background-color: #10ABA8;
+}
+.fix ul li a {
+  color: white;
+  font-size: 13px;
+}

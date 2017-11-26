@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京人民医院</title>
+    <link rel="shortcut icon" href="logo.ico" />
+    <link rel="stylesheet" href="css/cssreset-min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+    <!-- <script src="js/beijing.js"></script> -->
+</head>
+
+<body>
+    <div class="headDiv bx bm ff">
+        <div class="wal">
+            <a><img src="imgs/logo.png" alt=""></a>
+            <ul class="of">
+                <li class="fl p">大众版</li>
+                <li class="fl">专业版</li>
+                <li class="fl">ENGLISH</li>
+                <li class="fl">OA登录</li>
+            </ul>
+        </div>
+    </div>
+    <div class="wal-nav bx bm ff">
+        <ul class="of aaa">
+            <li class="fl ta"><a href="index.html">网站首页</a></li>
+            <li class="fl ta"><a href="hospital-introduction.html">医院概况</a></li>
+            <li class="fl ta"><a href="news.html">新闻中心</a></li>
+            <li class="fl ta"><a href="team.html">医护团队</a></li>
+            <li class="fl ta"><a href="ill.html">患者服务</a></li>
+            <li class="fl ta"><a>健康知识</a></li>
+            <li class="fl ta"><a>教学科研</a></li>
+        </ul>
+        <script>
+            $(function() {
+                $('.aaa li').hover(function() {
+                    $(this).css('background-color', '#5E9FDF');
+                    $(this).children('a').css('color', 'white');
+                }, function() {
+                    $(this).css('background', 'none')
+                    $(this).children('a').css('color', '#666');
+                })
+            })
+        </script>
+        <form action="#" class="fr">
+            <div class="topSearch">
+                <input type="text" class="inp1">
+                <input type="button" class="btn1">
+            </div>
+        </form>
+    </div>
+    <div class="dn"></div>
+    <div class="Banner bx bm ff pr">
+        <ul>
+            <li class="Banner1">
+                <a href=""><img src="imgs/topbanner1.jpg" alt=""></a>
+            </li>
+            <li class="Banner2 dn">
+                <a href=""><img src="imgs/topbanner2.jpg" alt=""></a>
+            </li>
+        </ul>
+        <script>
+            $(function() {
+                var num = 0;
+                timeout = setInterval(function() {
+                    if ($('.Banner2').css('display') == 'list-item') {
+                        $('.btnDiv span').eq($(this).index()).css('background', '#5E95B5').siblings().css('background', '#f4f4f4');
+                    } else {
+                        $('.btnDiv span').eq($(this).index() - 1).css('background', '#5E95B5').siblings().css('background', '#f4f4f4');
+                    }
+                    $('.Banner2').fadeToggle(1000)
+                }, 3000);
+                $('.btnDiv span').hover(function() {
+                    $(this).css('background', '#5E95B5').siblings().css('background', '#f4f4f4');
+                    $('.Banner li').eq($(this).index()).css('display', 'block').siblings().css('display', 'none');
+                })
+            })
+        </script>
+        <div class="btnDiv">
+            <span class="img-btn1"></span>
+            <span class="img-btn2"></span>
+        </div>
+        <div class="formDiv pa">
+            <div class="jiantou pa">
+                <a class="pa">></a>
+            </div>
+            <script>
+                $(function() {
+                    var f = 1;
+                    var rotate = 1;
+                    $('.jiantou a').on('click', function() {
+                        $('.formDiv').animate({
+                            right: '-=' + 220 * f
+                        }, 1000);
+                        f *= -1;
+                        $('.jiantou').css({
+                            transform: 'rotatez(' + 180 * rotate + 'deg)'
+                        })
+                        rotate++;
+                    })
+                })
+            </script>
+            <div class="bg1">
+                <h2>患者咨询指南</h2>
+                <form action="#">
+                    <input type="text" class="inp2" value="疾病查询">
+                    <input type="button" class="btn2 btn21">
+                    <input type="text" class="inp2" value="药物查询">
+                    <input type="button" class="btn2 btn22">
+                    <input type="text" class="inp2" value="查找专家">
+                    <input type="button" class="btn2 btn23">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wal-m bx bm">
+        <div class="index-img">
+            <ul>
+                <li class="l l-1 fl">
+                    <a class="a1" href=""><img src="imgs/p1.png" alt="">出诊信息</a>
+                </li>
+                <li class="l l-2 fl">
+                    <a class="a2" href=""><img src="imgs/p12.png" alt="">就诊须知</a>
+                </li>
+                <li class="l l-3 fl">
+                    <a class="a3" href=""><img src="imgs/p13.png" alt="">交通指南</a>
+                </li>
+                <li class="l l-4 fl">
+                    <a class="a4" href=""><img src="imgs/p14.png" alt="">志愿服务</a>
+                </li>
+                <li class="l l-5 fl last">
+                    <a class="a5" href=""><img src="imgs/p15.png" alt="">意见反馈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="index-part2">
+            <ul>
+                <li class="l1 fl">
+                    <div class="title va">
+                        <a class="current">新闻聚焦</a>
+                        <a>专题报道</a>
+                        <a class="last"><span>更多+</span></a>
+                    </div>
+                    <script>
+                        $(function() {
+                            $('.index-part2 .title a').not('.last').hover(function() {
+                                $(this).addClass('current').siblings().removeClass('current');
+                            })
+                        })
+                    </script>
+                    <div class="cb"></div>
+                    <div class="content">
+                        <div class="img fl">
+                            <a class="pr"><img src="imgs\p21.png" alt="" width="315" height="210"><span class="wenzi">国家人力社保部游……<span class="circle"><i></i><i></i><i></i><i></i><i></i></span></span>
+                            </a>
+                        </div>
+                        <div class="content1 fl ff">
+                            <h2>百年新力量 2017年新员工踏上……</h2>
+                            <p>百年医院新生力量 北京大学人民医院2017年新员工踏上征程 如火... <br> <a class="ax">+查看详细</a>`</p>
+                            <ul class="ul">
+                                <li>1我院第四次党代会代表2017年年会隆重...</li>
+                                <li>2我院第四次党代会代表2017年年会隆重...</li>
+                                <li>3我院第四次党代会代表2017年年会隆重...</li>
+                                <li>4我院第四次党代会代表2017年年会隆重...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        $(function() {
+                            $('.index-part2 .content1 ul li').hover(function() {
+                                $(this).css('color', 'blue')
+                            }, function() {
+                                $(this).css('color', '#666')
+                            })
+                        })
+                    </script>
+                </li>
+                <li class="l2 fl ">
+                    <div class="title1 ">
+                        <a>专家风采</a>
+                        <a class="last"><span>更多+</span></a>
+                    </div>
+                    <div class="cb"></div>
+                    <div class="content2 pr">
+                        <div class="content21 pr">
+                            <a><img src="imgs/p22.jpg" alt=""></a>
+                            <span class="pa">姜保国</span>
+                            <ul class="pa">
+                                <li class="fl">&lt;</li>
+                                <li class="fl">&gt;</li>
+                            </ul>
+                        </div>
+                        <div class="content22 pa ff">
+                            <h2>江保国教授获2015年度顾氏和平奖</h2>
+                            <p>近日，菲律宾顾氏和平奖基金会（Gusi Peace Prize Foundation）公布了2016年顾氏和平奖获奖名单，北京大学人民医院姜保国教授等全球20位杰出人物获奖。这是我...</p>
+                            <span>阅读详细内容</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cb"></div>
+    <div class="news bx bm ff">
+        <ul>
+            <li>
+                <div class="title t1">
+                    <a class="current">健康讲座</a>
+                    <a>热点公告</a>
+                    <a class="last"><span>更多+</span></a>
+                </div>
+                <div class="cb"></div>
+                <div class="content">
+                    <ul>
+                        <li>2017年8月健康教育相关活动统计表</li>
+                        <li>2017年7月健康教育相关活动统计表</li>
+                        <li>2017年6月健康教育相关活动统计表</li>
+                        <li>2017年5月北京大学人民医院健康教育活动安排</li>
+                        <li>2017年4月北京大学人民医院健康教育活动安排</li>
+                        <li>3月义诊：65岁以上老年人免费听力测试、筛查老年痴呆</li>
+                        <li>3月北京大学人民医院健康教育活动安排</li>
+                    </ul>
+                </div>
+                <script>
+                    $(function() {
+                        $('.news ul li ul li').hover(function() {
+                            $(this).css('color', 'blue')
+                        }, function() {
+                            $(this).css('color', '#666')
+                        })
+                    })
+                </script>
+            </li>
+            <li>
+                <div class="title t2">
+                    <a class="current">健康新闻</a>
+                    <a>健康视频</a>
+                    <a class="last"><span>更多+</span></a>
+                </div>
+                <script>
+                    $(function() {
+                        $('.news .t1 a').not('.last').hover(function() {
+                            $(this).addClass('current').siblings().removeClass('current');
+                        })
+                        $('.news .t2 a').not('.last').hover(function() {
+                            $(this).addClass('current').siblings().removeClass('current');
+                        })
+                    })
+                </script>
+                <div class="cb"></div>
+                <div class="content">
+                    <ul>
+                        <li>世界肝炎日专题</li>
+                        <li>“世界肝炎日”的由来和历年主题</li>
+                        <li>世界卫生组织2017年全球肝炎报告</li>
+                        <li>世界肝炎日：消灭病毒性肝炎还有多远？</li>
+                        <li>病毒性肝炎防治：北京大学肝病研究所一直在路上</li>
+                        <li>甲乙丙丁戊、病毒性肝炎知多少</li>
+                        <li>如何预防乙型肝炎</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="title t3">
+                    <a>健康讲座</a>
+                    <a>热点公告</a>
+                    <a class="last"><span>更多+</span></a>
+                </div>
+                <script>
+                    $(function() {
+                        $('.news .t3 a').not('.last').hover(function() {
+                            $(this).addClass('current').siblings().removeClass('current');
+                        })
+                    })
+                </script>
+                <div class="cb"></div>
+                <div class="content">
+                    <ul>
+                        <li>2017年8月健康教育相关活动统计表</li>
+                        <li>2017年7月健康教育相关活动统计表</li>
+                        <li>2017年6月健康教育相关活动统计表</li>
+                        <li>2017年5月北京大学人民医院健康教育活动安排</li>
+                        <li>2017年4月北京大学人民医院健康教育活动安排</li>
+                        <li>3月义诊：65岁以上老年人免费听力测试、筛查老年痴呆</li>
+                        <li>3月北京大学人民医院健康教育活动安排</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footlink">
+        <div class="content">
+            <ul class="bx bm">
+                <li>
+                    <a href=""><img src="imgs\f1.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="imgs\f2.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="imgs\f3.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="imgs\f4.png" alt=""></a>
+                </li>
+            </ul>
+            <div class="r-arrow pa">
+                <a class="pa">◇</a>
+            </div>
+            <div class="l-arrow pa">
+                <a class="pa">◇</a>
+            </div>
+        </div>
+    </div>
+    <div class="footDiv">
+        <div class="content bx bm">
+            <ul>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <script>
+                    $(function() {
+                        $('.footDiv .content ul li dl *').hover(function() {
+                            $(this).css('text-decoration', 'underline')
+                        }, function() {
+                            $(this).css('text-decoration', 'none')
+                        })
+                    })
+                </script>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd>出诊信息查询</dd>
+                        <dt class="last"></dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">院长信箱</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">隐私安全</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>组织架构</dd>
+                        <dd>光耀足记</dd>
+                        <dd></dd>
+                        <dt class="last">版权声明</dt>
+                    </dl>
+                </li>
+                <li class="fl">
+                    <dl>
+                        <dt>医院概况</dt>
+                        <dd>医院介绍</dd>
+                        <dd>领导团队</dd>
+                        <dd>医院历史</dd>
+                        <dd>医院元勋</dd>
+                        <dd>医院荣誉</dd>
+                        <dd></dd>
+                        <dt class="last">帮助信息</dt>
+                    </dl>
+                </li>
+            </ul>
+            <div class="copyright fr">
+                <p>ICP备案信息：京ICP备10005257 <br> 京ICP备05082109 <br> 医院地址（西直门院区）：北京市西直门南大街11号<br> 邮编：100044 <br> 医院总机：8832666 <br> <br> COPYRIGHT © 2004-2010　网站建设：北京分形科技
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fix pf">
+        <ul>
+            <li>
+                <a href=""><img src="imgs/icon1.png" alt=""><br>官方微博</banner>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon2.png" alt=""><br>官方微信</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon3.png" alt=""><br>请提意见</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon4.png" alt=""><br>人才招聘</a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon5.png" alt=""><br>我要进修</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
